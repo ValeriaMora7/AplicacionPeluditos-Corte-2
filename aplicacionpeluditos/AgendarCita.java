@@ -130,7 +130,7 @@ public class AgendarCita extends JFrame {
         setVisible(true);
     }
 
-    private void actualizarMascotas() {
+    private void actualizarMascotas() { //Llena el combo de mascotas solo con las del cliente seleccionado.
         comboMascotas.removeAllItems();
         int clienteSeleccionado = comboClientes.getSelectedIndex();
         if (clienteSeleccionado >= 0 && clienteSeleccionado < listaClientes.size()) {
@@ -185,7 +185,7 @@ public class AgendarCita extends JFrame {
     Mascota mascota = new Mascota(nombreMascota); 
     Cita nuevaCita = new Cita(cliente, servicio, fechaStr, horaStr, nombreVeterinario, aDomicilio, mascota); 
 
-    boolean registrada = GestordeCitas.agregarCita(nuevaCita);
+    boolean registrada = GestordeCitas.agregarCita(nuevaCita); // Si todo es válido, se muestra un mensaje de éxito y se guarda la cita
     if (!registrada) {
         JOptionPane.showMessageDialog(this, "Ya existe una cita para este cliente en esa fecha y hora.", "Error", JOptionPane.ERROR_MESSAGE);
     } else {
