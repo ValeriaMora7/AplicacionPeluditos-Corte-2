@@ -41,7 +41,7 @@ public class EditarMascota extends JFrame {
         lblImagen = new JLabel();
         lblImagen.setBounds(130, 20, 120, 120);
         setImagen(imagenRuta);
-        lblImagen.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblImagen.setCursor(new Cursor(Cursor.HAND_CURSOR)); //poder interacturar con la imagen
         lblImagen.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
