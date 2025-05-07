@@ -56,10 +56,10 @@ public class Mascota implements Serializable {
 
     @Override
     public String toString() {
-        return getNombre() + " (ID: " + getId() + ")";
+        return getNombre() + " (ID: " + getId() + ")"; //como seran mostradas en listas
     }
     @Override
-public boolean equals(Object obj) {
+public boolean equals(Object obj) { //permiten comparar mascotas correctamente (por ejemplo, para ver si ya existe una con el mismo ID):
     if (this == obj) return true;
     if (obj == null || getClass() != obj.getClass()) return false;
     Mascota mascota = (Mascota) obj;
