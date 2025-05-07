@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 public class AgregarCliente extends JFrame {
 
-    private JTextField txtNombre, txtDireccion, txtCelular;
+    private JTextField txtNombre, txtDireccion, txtCelular; //permite escribir informacion
     private VentanaClientes ventanaClientes;
     private JPanel panelMascotas;
     private ArrayList<JCheckBox> checkboxesMascotas;
@@ -77,7 +77,7 @@ public class AgregarCliente extends JFrame {
         JScrollPane scrollMascotas = new JScrollPane(panelMascotas);
         scrollMascotas.setBounds(50, 360, 330, 130);
         scrollMascotas.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
-        add(scrollMascotas);
+        add(scrollMascotas); //Sirve para mostrar un panel con barra de desplazamiento vertical si hay demasiados elementos para verlos todos a la vez.
 
         checkboxesMascotas = new ArrayList<>();
         cargarMascotasDisponibles();
