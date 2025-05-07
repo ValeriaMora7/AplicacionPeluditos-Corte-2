@@ -47,7 +47,7 @@ public class Veterinario implements Serializable {
     }
     @Override
     public String toString() {
-        return nombre;  // Esto es para que se vea en el JComboBox
+        return nombre;  // Esto es para que se vea en el JComboBox (menu desplegable)
     }
 }
 
